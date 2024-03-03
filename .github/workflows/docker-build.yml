@@ -21,5 +21,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t manishmondal/Movie_Front_v1:latest .
-          docker push manishmondal/Movie_Front_v1:latest
+          docker build -t manishmondal/movie_front_v1:latest .
+          docker push manishmondal/movie_front_v1:latest
