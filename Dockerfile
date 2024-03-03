@@ -1,5 +1,5 @@
 # Use the official Node.js image as base
-FROM node:latest AS build
+FROM node:20.1.0 
 
 # Set the working directory in the container
 WORKDIR /src/index.js
