@@ -19,7 +19,12 @@ const [allReviews, setReview] = useState();
 const getMovies = async() =>{
   try {
  
-    const response = await api.get("/api/v1/movies");
+    const response = await api.get("/api/v1/movies",{
+      auth: {
+        username: "manish",
+        password: "password"
+      }
+    });
     setMovies(response.data);
    //console.log(movies);
   
